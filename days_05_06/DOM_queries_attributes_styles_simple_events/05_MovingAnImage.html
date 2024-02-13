@@ -58,6 +58,33 @@
       let currentLeft = 250;
       let currentTop = 0;
 
+      btnLeft.onclick = function() {
+        if (currentLeft <= 450 && currentLeft >=50) {
+        currentLeft -= 50;
+        let number = currentLeft.toString();
+        pikachu.style.left = number + "px"; 
+        }
+      }
+      
+      btnRight.onclick = function() {
+        if (currentLeft <= 400 && currentLeft >=50) {
+        currentLeft += 50;
+        let number = currentLeft.toString();
+        pikachu.style.left = number + "px"; 
+        }
+      }
+
+      btnUp.onclick = function() {
+        pikachu.style.top += 50; 
+        }
+
+      btnDown.onclick = function() {
+        pikachu.style.bottom += 50; 
+        }
+
+      
+
+
     </script>
 
   </body>
